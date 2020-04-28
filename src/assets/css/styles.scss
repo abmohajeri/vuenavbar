@@ -1,0 +1,177 @@
+/*                    Libraries                    */
+@import "slideMenu";
+
+/*                    Main Styles                    */
+html, body {
+    font-family: "IRANSans" !important;
+    direction: rtl !important;
+    text-align: right !important;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.allBoxShadows {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.02);
+}
+
+#app {
+    height: 100% !important;
+}
+
+.ol-control {
+    top: auto;
+    right: auto;
+    left: 10px;
+    bottom: 70px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.ol-control button {
+    outline: none !important;
+    background: white !important;
+    color: #264f6f !important;
+    border-radius: 5px !important;
+    padding-top: 6px !important;
+    padding-right: 1px !important;
+}
+
+.iziToast-Map {
+    font-family: "IRANSans" !important;
+}
+
+.iziToast-Map .iziToast-texts .iziToast-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 260px !important;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.iziToast-Map .iziToast-texts .iziToast-message {
+    text-align: justify !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 32px;
+    margin-bottom: 2px !important;
+    -webkit-line-clamp: 2; /* Write the number of lines you want to be displayed */
+    -webkit-box-orient: vertical;
+}
+
+.iziToast-Map .iziToast-buttons {
+    width: 100% !important;
+}
+
+.heading {
+    direction: rtl;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px 5px;
+}
+
+.heading:after {
+    content: '';
+    border-top: 2px solid #007EFC;
+    margin: 0 10px 0 25px;
+    flex: 1 0 20px;
+}
+
+.slick-track {
+    margin: initial;
+}
+
+.eachItem {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px !important;
+    border-top: 3px solid #d54e54;
+    background-color: white;
+    padding-left: 60px;
+}
+
+.eachItem a {
+    height: 97px !important;
+    width: 200px !important;
+    font-size: 20px;
+    border-radius: 0 !important;
+    float: right;
+    cursor: pointer;
+}
+
+.menuImageItems {
+    width: 50px;
+    height: 50px;
+    margin: -2px auto 4px !important;
+}
+
+.nextCatArrows {
+    position: absolute;
+    cursor: pointer;
+    height: 97px;
+    width: 50px;
+    right: 0;
+    z-index: 2;
+}
+
+.nextCatArrows span {
+    cursor: pointer;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDUxLjg0NiA0NTEuODQ3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTEuODQ2IDQ1MS44NDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzQ1LjQ0MSwyNDguMjkyTDE1MS4xNTQsNDQyLjU3M2MtMTIuMzU5LDEyLjM2NS0zMi4zOTcsMTIuMzY1LTQ0Ljc1LDBjLTEyLjM1NC0xMi4zNTQtMTIuMzU0LTMyLjM5MSwwLTQ0Ljc0NCAgIEwyNzguMzE4LDIyNS45MkwxMDYuNDA5LDU0LjAxN2MtMTIuMzU0LTEyLjM1OS0xMi4zNTQtMzIuMzk0LDAtNDQuNzQ4YzEyLjM1NC0xMi4zNTksMzIuMzkxLTEyLjM1OSw0NC43NSwwbDE5NC4yODcsMTk0LjI4NCAgIGM2LjE3Nyw2LjE4LDkuMjYyLDE0LjI3MSw5LjI2MiwyMi4zNjZDMzU0LjcwOCwyMzQuMDE4LDM1MS42MTcsMjQyLjExNSwzNDUuNDQxLDI0OC4yOTJ6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)  ;
+    background-size: cover;
+    color: black !important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 222222;
+    transition: 0.1s ease;
+}
+
+.nextCatArrows:hover span {
+    width: 35px;
+    height: 35px;
+}
+
+.prevCatArrows {
+    position: absolute;
+    cursor: pointer;
+    height: 97px;
+    width: 50px;
+    left: 60px;
+    z-index: 2;
+}
+
+.prevCatArrows span {
+    cursor: pointer;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDUxLjg0NyA0NTEuODQ3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTEuODQ3IDQ1MS44NDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNOTcuMTQxLDIyNS45MmMwLTguMDk1LDMuMDkxLTE2LjE5Miw5LjI1OS0yMi4zNjZMMzAwLjY4OSw5LjI3YzEyLjM1OS0xMi4zNTksMzIuMzk3LTEyLjM1OSw0NC43NTEsMCAgIGMxMi4zNTQsMTIuMzU0LDEyLjM1NCwzMi4zODgsMCw0NC43NDhMMTczLjUyNSwyMjUuOTJsMTcxLjkwMywxNzEuOTA5YzEyLjM1NCwxMi4zNTQsMTIuMzU0LDMyLjM5MSwwLDQ0Ljc0NCAgIGMtMTIuMzU0LDEyLjM2NS0zMi4zODYsMTIuMzY1LTQ0Ljc0NSwwbC0xOTQuMjktMTk0LjI4MUMxMDAuMjI2LDI0Mi4xMTUsOTcuMTQxLDIzNC4wMTgsOTcuMTQxLDIyNS45MnoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+    background-size: cover;
+    color: black !important;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 222222;
+    transition: 0.1s ease;
+}
+
+.prevCatArrows:hover span {
+    width: 35px;
+    height: 35px;
+}
